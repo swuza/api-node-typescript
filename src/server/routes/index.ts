@@ -12,6 +12,7 @@ router.get('/', (_, res) => {
 });
 
 
+router.get('/cidades', CidadesController.getAllValidation, CidadesController.getAll);
 router.post('/cidades', CidadesController.createValidation, CidadesController.create);
 
 
