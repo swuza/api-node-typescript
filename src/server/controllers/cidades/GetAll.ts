@@ -24,10 +24,11 @@ export const getAll = async (req: Request<{}, {}, {}, IQueryProps>, res: Respons
   res.setHeader('access-control-expose-headers', 'x-total-count');
   res.setHeader('x-total-count', 1);
   
-  return res.status(StatusCodes.OK).json([
+  res.status(StatusCodes.OK).json([
     {
       id: 1,
       nome: 'Sao Paulo',
     }
   ]);
+  return
 };
