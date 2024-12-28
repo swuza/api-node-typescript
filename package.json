@@ -9,7 +9,6 @@
     "start": "nodemon ./src/index.ts",
     "build": "tsc",
     "production": "node ./build/index.js",
-    "postinstall": "tsc",
     "test": "jest"
   },
   "dependencies": {
