@@ -34,7 +34,6 @@ export const updateById = async (req: Request<IParamsProps, {}, IBodyProps>, res
     return
   }
 
-  
   res.status(StatusCodes.NO_CONTENT).send();
   return
 };

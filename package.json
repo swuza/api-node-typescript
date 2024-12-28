@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
     "build": "tsc",
     "production": "yarn build",
     "test": "jest"
