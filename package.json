@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./src/index.ts",
-    "build": "tsc",
+    "production": "node ./build/index.js",
+    "postinstall": "tsc",
     "test": "jest"
   },
   "dependencies": {
@@ -33,5 +34,8 @@
     "typescript-eslint": "^8.18.1"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "16.x"
+  }
 }
