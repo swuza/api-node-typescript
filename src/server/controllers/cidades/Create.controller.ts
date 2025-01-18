@@ -4,7 +4,6 @@ import * as yup from 'yup';
 
 import { validation } from "../../shared/middleware";
 
-
 interface ICidade {
   nome: string;
 };
@@ -12,7 +11,7 @@ interface ICidade {
 
 export const createValidation = validation((getSchema) => ({
   body: getSchema<ICidade>(yup.object().shape({
-    nome: yup.string().required().min(3),
+  nome: yup.string().required().min(3),
   })),
 }));
 
