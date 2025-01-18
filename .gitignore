@@ -4,4 +4,4 @@
 /covage
 
 .env
-.sqlite
+*.sqlite
